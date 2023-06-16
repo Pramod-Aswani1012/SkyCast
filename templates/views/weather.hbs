@@ -153,6 +153,12 @@
 
     /* Responsive */
     @media (max-width: 768px) {
+
+        
+    span{
+        font-size: 20px;
+    }
+
         .leftside {
             height: auto;
             margin: 5rem 0;
@@ -173,7 +179,7 @@
             height: 55%;
             display: flex;
             position: absolute;
-            bottom: 28%;
+            bottom: 36%;
             justify-content: center;
             align-items: center;
             font-size: 3em;
@@ -185,6 +191,10 @@
             width: 100%;
             height: 45%;
             z-index: 4;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
         }
 
         .location {
@@ -206,25 +216,21 @@
             text-transform: uppercase;
         }
 
-        #tempmin_max {
-            text-align: center;
-            /* margin-top: 0.3rem; */
-            font-weight: 300;
-            position: absolute;
-            bottom: 0.8rem;
-            width: 100%;
-            height: 3rem;
-            font-size: 1.2rem;
-            color: #57606f;
-        }
+        #temp {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem; /* Adjust the margin as per your preference */
+}
 
-        #temp{
-            margin-top: 0rem;
-        }
+#tempmin_max {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #57606f;
+    margin-top: 0.5rem; /* Adjust the margin as per your preference */
+}
         
-        .box{
-            width: 83vw;
-        }
+        
     }
 
     * {
@@ -252,6 +258,7 @@
         width: 100vw;
     }
 
+
     .containerr {
         background: #f3f2ef;
         display: flex;
@@ -274,15 +281,15 @@
 
     .box {
         width: 23vw;
-        height: 60vh;
+        height: 70vh;
         border-radius: 0.5rem;
         box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
         background: #a5bbdd;
         position: relative;
         overflow: hidden;
         transform: translate3d(0, 0, 0);
-        min-width: 20rem;
-        min-height: 35rem;
+        min-width: 23rem;
+        min-height: 38rem;
     }
 
     .wave {
@@ -340,6 +347,7 @@
         width: 100%;
         height: 45%;
         z-index: 4;
+        
     }
 
     .location {
@@ -365,7 +373,7 @@
 
     #date {
         text-align: center;
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
         color: #57606f;
         font-size: 1.2rem;
         font-weight: 300;
@@ -373,7 +381,7 @@
     }
 
     #temp {
-        margin-top: 2.5rem;
+        
         text-align: center;
         font-size: 3rem;
     }
@@ -411,13 +419,16 @@
 
 
 
-    @media (max-height: 500px) {
+    @media (max-width: 500px) {
         .box {
-            height: 80vh;
+            height: 74vh;
         }
 
         .wave {
             top: 115%;
+        }
+        h1{
+            font-size: 20px;
         }
     }
 
@@ -511,13 +522,13 @@
 
             <div class="info">
                 <h2 class="location">
-                    <i class="fas fa-street-view" style="color: #fff"></i><span id="location"></span>, <span
+                    <i class="fas fa-street-view" style="color: #fff"></i><span id="location"></span> <span
                         id="country"></span>
                 </h2>
                 <p id="date"></p>
-                <span>
+                
                     <h2 id="temp"></h2>
-                </span>
+                
                 <h3 id="tempmin_max">
 
                 </h3>
